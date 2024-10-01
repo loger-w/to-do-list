@@ -1,27 +1,41 @@
+# 待辦清單
+這個專案是基於 Angular 16.1.0 版本的待辦清單專案。
+
+## 環境需求
+請先確定已安裝 Node.js 和 Angular CLI。
+若未安裝 Angular CLI 可使用已下指令下載對應版本的 Angular CLI：
+`npm i @angular/cli@16.1.0`
+
+## 第一次使用專案
+執行以下指令安裝所需要的套件：
+`npm install`
+
+## 啟動開發伺服器
+執行以下指令：
+`ng serve -o`
+或以下簡短指令：
+`ng s -o`
+伺服器網址預設為 `http://localhost:4200/` 運行。
+
 # ToDoListClient
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+This is a to-do list project built with Angular 16.1.0.
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ensure that Node.js and Angular CLI are installed.
+If you haven't installed Angular CLI yet, run the following command:
+`npm install -g @angular/cli`
 
-## Code scaffolding
+## First-Time Setup
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run the following command to install all the required dependencies:
+`npm install`
 
-## Build
+## Starting the Development Server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Start the development server and automatically open the project in the browser:
+`ng serve -o`
+Or use the shorthand:
+`ng s -o`
+The development server will run at http://localhost:4200/ by default. If you need to change the default port, refer to the Angular CLI documentation.
