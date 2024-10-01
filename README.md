@@ -1,4 +1,5 @@
 # 待辦清單
+網址 https://loger-w.github.io/to-do-list/#/toDoList
 這個專案是基於 Angular 16.1.0 版本的待辦清單專案。
 
 ## 環境需求
@@ -18,22 +19,19 @@
 伺服器網址預設為 `http://localhost:4200/` 運行。
 
 # ToDoListClient
-
+url: https://loger-w.github.io/to-do-list/#/toDoList
 This is a to-do list project built with Angular 16.1.0.
 
 ## Prerequisites
-
 Ensure that Node.js and Angular CLI are installed.
 If you haven't installed Angular CLI yet, run the following command:
 `npm install -g @angular/cli`
 
 ## First-Time Setup
-
 Run the following command to install all the required dependencies:
 `npm install`
 
 ## Starting the Development Server
-
 Start the development server and automatically open the project in the browser:
 `ng serve -o`
 Or use the shorthand:
