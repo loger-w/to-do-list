@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="card">
+    <h1 class="card-title">待辦事項</h1>
+    <h5>待辦事項數量: {{ toDoNumber }}</h5>
+    <div class="card-list">
+      <input type="text" placeholder="請輸入待辦事項" [(ngModel)]="newToDo">
+      <button class="button" mat-stroked-button color="primary" (click)="addTodo()">新增</button>
+    </div>
+    <!-- 待辦清單 -->
+    <div class="card-body">
+      <!-- 用 ngFor 將資料逐筆顯示 -->
+      <ng-container *ngFor="let item of toDoList; index as i">
+        <div class="card-list">
+          <!-- 勾選後代表事項完成 -->
+          <mat-checkbox [(ngModel)]="item.done" color="primary" (click)="doneWork(item.done)"></mat-checkbox>
+          <!-- 顯示事項名稱 -->
+          <div style="width: 80%;">
+            <span [ngClass]="{'done': item.done}">{{ item.work }}</span>
+          </div>
+          <!-- 刪除事項按鈕 -->
+          <button class="button" mat-mini-fab color="warn" (click)="deleteWork(i)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

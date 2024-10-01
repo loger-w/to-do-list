@@ -1,0 +1,78 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(45deg, #BBDEFB, #E3F2FD);
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 100px 100px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card-list>input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.button {
+  margin-left: auto;
+  box-shadow: none !important;
+}
+
+.card-body {
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+  scrollbar-gutter: stable;
+}
+
+// 滾動條寬度
+.card-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+// 滾動條軌道顏色
+.card-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+// 滾動條顏色
+.card-body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+// 当内容超出时显示滚动条
+.card-body::-webkit-scrollbar {
+  display: block;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
